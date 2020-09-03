@@ -1,2 +1,2 @@
 
-# El taller de git eNO ES COOL
+# El taller de git sí es cool, je
