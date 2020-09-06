@@ -8,7 +8,7 @@
 
 :root{/*pseudoclase para variables*/
     --bg: #1d3557;
-    --fg: #FEFEFEFE;/*141414*/
+    --fg: #FEFEFEFE;
     --cardbg: #EEE;
     --buttonbg: #1d3557;
     --accent: #4ecdc4;
@@ -42,7 +42,7 @@ i{
     font-weight: 300;
 }
 
-.text > i{
+.text i{
     color: #FFAC33;
 }
 
@@ -64,19 +64,10 @@ i{
     object-fit: cover;
 }
 
-.ME{
+.title{
     text-align: center;
     font-size: 40px;
     margin: 20px 0px 15px 0px;
-}
-
-.ME::after{
-    width: 25%;
-    height: 25%;
-    display: flex;
-    object-fit: cover;
-    content: "";
-    background-image: url("./assets/totoros.gif/400/100");
 }
 
 .subtitle{
