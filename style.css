@@ -11,7 +11,7 @@
     --fg: #141414;
     --cardbg: #EEE;
     --buttonbg: #E4E6E6;
-    --accent: #FFAC33;
+    --accent: #4ecdc4;
     --border: 5px;
     --shadow: 0 10px 10px rgba(0, 0, 0, .5);
 }
@@ -19,6 +19,10 @@
 body{
     font-family: 'Signika', sans-serif;
     background-color: var(--bg);
+}
+
+i{
+    color: #FFAC33;
 }
 
 .card{
@@ -31,6 +35,7 @@ body{
 }
 
 .text{
+    line-height: 25px;
     font-size: 15px;
     text-align: justify;
     font-weight: 300;
@@ -56,16 +61,21 @@ body{
 .ME{
     text-align: center;
     font-size: 40px;
-    margin-top: 15px;
+    margin: 20px 0px 15px 0px;
+}
+
+.ME::after{
+    width: 25%;
+    height: 25%;
+    display: flex;
+    object-fit: cover;
+    content: "";
+    background-image: url("./assets/totoros.gif/400/100");
 }
 
 .subtitle{
     font-size: 20px;
     margin-top: 10px;
-}
-
-.about{
-    margin-bottom: 20px;
 }
 
 .block{
@@ -76,7 +86,13 @@ body{
     list-style: none;
 }
 
-.buttons{
+.links{
+    color: var(--fg);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.buttons-container{
     display: flex;
     width: 100%;
     align-items: center;
