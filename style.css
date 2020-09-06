@@ -7,12 +7,13 @@
 }
 
 :root{/*pseudoclase para variables*/
-    --bg: #F5F5F5F5;
-    --fg: #141414;
+    --bg: #1d3557;
+    --fg: #FEFEFEFE;/*141414*/
     --cardbg: #EEE;
-    --buttonbg: #E4E6E6;
+    --buttonbg: #1d3557;
     --accent: #4ecdc4;
     --border: 5px;
+    --link-text: #141414;
     --shadow: 0 10px 10px rgba(0, 0, 0, .5);
 }
 
@@ -22,11 +23,11 @@ body{
 }
 
 i{
-    color: #FFAC33;
+    color: var(--bg);
 }
 
 .card{
-    width: 45%;
+    width: 35%;
     padding: 50px;
     border-radius: var(--border);
     margin: 5% auto;
@@ -41,6 +42,10 @@ i{
     font-weight: 300;
 }
 
+.text > i{
+    color: #FFAC33;
+}
+
 .photo{
     margin: 10px auto;
     width: 250px;
@@ -49,6 +54,7 @@ i{
     overflow: hidden;
     border-radius: 50%;
     box-shadow: var(--shadow);
+    background-color: var(--bg);
 }
 
 .photo img{
@@ -75,7 +81,7 @@ i{
 
 .subtitle{
     font-size: 20px;
-    margin-top: 10px;
+    margin: 10px 0px 15px 0px;
 }
 
 .block{
@@ -84,12 +90,25 @@ i{
 
 .list_item{
     list-style: none;
+    transition: all .3s ease;
 }
 
 .links{
-    color: var(--fg);
+    color: var(--link-text);
     font-size: 15px;
     text-decoration: none;
+}
+
+.links:hover{
+    padding: 0px 10px 0px 10px;
+    color: var(--cardbg);
+    border-radius: 10px;
+    background-color: var(--bg);
+}
+
+.list_item:hover{
+    transform: translateY(-6px);
+    color: var(--link-text);
 }
 
 .buttons-container{
@@ -112,7 +131,9 @@ i{
 }
 
 .button:hover{
+    font-size: 20px;
     transform: translateY(-4px);
-    background-color: var(--accent);
+    color: var(--cardbg);
+    background-color: #e63946;
     box-shadow: 0 7px 7px;
 }
